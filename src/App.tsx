@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import Layout from './components/Layout';
-import { MyBook } from './pages/MayBook/MayBook.async';
+import { MyBook } from './pages/MyBook/MyBook.async';
 
 const App: FC = () => (
   <Layout>
