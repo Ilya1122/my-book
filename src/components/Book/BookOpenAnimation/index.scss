@@ -1,0 +1,36 @@
+.containerAnimation {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  width: 550px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+
+  .leftCircle,
+  .rightCircle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    z-index: 100000;
+  }
+
+  .rightCircle {
+    left: 100%;
+    animation-name: moveRightToLeft;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+  }
+
+  @keyframes moveRightToLeft {
+    to {
+      left: 0;
+    }
+  }
+}

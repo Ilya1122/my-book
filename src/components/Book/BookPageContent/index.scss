@@ -1,0 +1,62 @@
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 16px;
+  position: relative;
+
+  .pageTitle {
+    color: #070703;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+
+  .pageImage {
+    width: 100%;
+    height: 100%;
+    max-width: 401px;
+    max-height: 320px;
+    object-fit: cover;
+  }
+
+  .pageDescription {
+    width: 100%;
+    max-width: 401px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 16px;
+
+    &:first-of-type {
+      text-indent: 2em;
+    }
+  }
+
+  .pageFooter {
+    background-image: url(../../../assets/image/numberPage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #73735f;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    height: 28px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-position: center;
+  }
+}

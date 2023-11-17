@@ -1,0 +1,46 @@
+.footerButton {
+    margin-top: 16px;
+    display: flex;
+    gap: 0 32px;
+    transition: all 0.1s ease-out;
+    opacity: 0;
+
+    .button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid #E2DCD5;
+        padding: 0;
+        transition: all 0.5s ease;
+
+        svg {
+            width: 32px;
+            height: 32px;
+                
+            path {
+                fill: #E2DCD5;
+            }
+        }
+
+        &:hover {
+            border-color: #FFCA2B;
+
+            svg {
+                
+                path {
+                    fill: #FFCA2B;
+                }
+            }
+        }
+    }
+}
+
+.activeFooter {
+    opacity: 1;
+}
